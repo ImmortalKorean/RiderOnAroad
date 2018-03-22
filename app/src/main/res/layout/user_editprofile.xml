@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/logged_user_backgroundImg"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="#edc54c"
+
+        android:scaleType="center" />
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/logged_user_profileImg"
+
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/logged_user_statusMsg_on_editProfile"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="150dp"
+
+        android:src="@drawable/profile"
+        app:civ_border_color="#ffffff"
+        app:civ_border_width="1dp" />
+
+    <ImageButton
+        android:id="@+id/finish_EditProfile"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+
+        android:background="#00ff0000"
+        android:src="@android:drawable/ic_menu_close_clear_cancel" />
+
+    <TextView
+        android:id="@+id/edit_logged_user_nickName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/logged_user_profileImg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+
+        android:text="이상엽"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/logged_user_statusMsg_on_editProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/finish_EditProfile"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="25dp"
+
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:text="개발 6주차"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="22dp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+
+        android:layout_alignBottom="@+id/logged_user_backgroundImg"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+
+        android:src="@drawable/edit_img_icon"
+        app:civ_border_color="#ffffff"
+        app:civ_border_width="1dp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+
+        android:layout_above="@+id/edit_logged_user_nickName"
+        android:layout_alignEnd="@+id/logged_user_profileImg"
+        android:layout_alignRight="@+id/logged_user_profileImg"
+        android:src="@drawable/edit_img_icon"
+        app:civ_border_color="#ffffff"
+        app:civ_border_width="1dp" />
+
+    <RelativeLayout
+        android:id="@+id/edit_statusMessage"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="10dp"
+
+            android:text="대화명"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <!--내용이 화면에 다 출력이 안될경우 '...'으로 표시한다.-->
+        <TextView
+            android:id="@+id/current_statusMessage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_alignParentLeft="true"
+
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView"
+
+            android:background="#4ed3a0"
+
+
+            android:ellipsize="end"
+            android:maxLength="60"
+            android:maxLines="2"
+            android:padding="10dp"
+            android:text="개발 6주차 이상엽 입니다"
+            android:textSize="18dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+
+            android:layout_above="@+id/current_statusMessage"
+            android:layout_toEndOf="@+id/textView"
+            android:layout_toRightOf="@+id/textView"
+            android:src="@drawable/edit_txt_icon"
+            app:civ_border_color="#ffffff"
+            app:civ_border_width="1dp" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

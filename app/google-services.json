@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "706809503344",
+    "firebase_url": "https://rideronaoad.firebaseio.com",
+    "project_id": "rideronaoad",
+    "storage_bucket": "rideronaoad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:706809503344:android:304a2ddd4293be8d",
+        "android_client_info": {
+          "package_name": "com.project.sangyeop.road_rideronaroad"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "706809503344-2m6c498p7d6ihq1cnvndb6ebpktoelp0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuuBEPOEpi52wQ54oFqk2N4OqfNWZWCdY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.project.sangyeop.road_rideronaroad">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <protected-broadcast android:name="android.intent.action.MEDIA_MOUNTED" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyB0PIMle4aXjX8IBXC2Q-tzDvm4qRr1aJw" />
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".User_Login" />
+        <activity android:name=".User_Signup" />
+        <activity
+            android:name="com.nhn.android.naverlogin.ui.OAuthLoginActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.nhn.android.naverlogin.ui.OAuthLoginInAppBrowserActivity"
+            android:label="OAuth2.0 In-app" />
+        <activity android:name=".Chatting" />
+        <activity android:name=".View_userProfile">
+            <meta-data
+                android:name="io.futurestud.tutorials.glide.glidemodule.CustomImageSizeGlideModule"
+                android:value="GlideModule" />
+        </activity>
+        <activity android:name=".SearchingFriend" />
+        <activity android:name=".View_friendProfile" />
+        <activity android:name=".User_editProfile" />
+        <activity android:name=".User_editStatusMsg_and_Nickname" />
+        <activity android:name=".Recording_Driving_Mode" />
+        <activity android:name=".DrivingCourseInventory" />
+        <activity android:name=".Chart" />
+        <activity android:name=".LiteListDemoActivity" />
+
+        <service android:name=".ReceivingMessage" />
+
+        <activity android:name=".faceDetect"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="landscape">
+            <!--android:screenOrientation = "landscape " 는
+            OpenCV JAVA API를 사용해서,  전체화면 카메라 영상을 보여줍니다.-->
+            ></activity>
+    </application>
+
+</manifest>

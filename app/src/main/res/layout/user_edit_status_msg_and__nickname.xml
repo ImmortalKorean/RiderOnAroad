@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.project.sangyeop.road_rideronaroad.User_editStatusMsg_and_Nickname">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#c3870e">
+
+        <ImageButton
+            android:id="@+id/finish_editStatusMsg_and_Ninkname"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#00000000"
+            android:padding="5dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/left_icon" />
+
+        <TextView
+            android:id="@+id/current_selection_function_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_centerInParent="true"
+
+            android:layout_toRightOf="@+id/finish_editStatusMsg_and_Ninkname"
+
+            android:text="Edit Status Message"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/modification_completed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+
+            android:layout_marginRight="10dp"
+
+            android:text="OK"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/current_selection_function_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+
+            android:text="상태 메시지"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/current_selection_function_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/current_selection_function_title"
+            android:layout_marginLeft="10dp"
+
+            android:layout_marginRight="10dp"
+
+
+            android:maxLength="60"
+            android:maxLines="6" />
+
+        <ImageButton
+            android:id="@+id/clear_all_character"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/current_selection_function_content"
+
+            android:background="#00000000"
+            android:scaleType="fitCenter"
+            android:src="@drawable/close_x_icon" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/nickname_blank_alert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="닉네임을 입력해 주세요"
+        android:textSize="18dp"
+        android:textAlignment="center"
+
+        android:visibility="gone"
+
+
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/count_character_limit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_toLeftOf="@+id/character_limit"
+
+            android:text="현재글자수" />
+
+        <TextView
+            android:id="@+id/character_limit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:text="/최대글자수" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

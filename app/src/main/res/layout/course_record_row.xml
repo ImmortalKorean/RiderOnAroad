@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:map="http://schemas.android.com/tools"
+
+    android:id="@+id/card_view"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+
+    android:clickable="true"
+    android:foreground="?selectableItemBackground"
+    card_view:cardBackgroundColor="#373737"
+    card_view:cardCornerRadius="10dp"
+    card_view:cardElevation="5dp"
+
+    >
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:padding="5dp">-->
+
+
+        <!--<com.google.android.gms.maps.MapView-->
+            <!--android:id="@+id/drivingCourse_Image"-->
+            <!--android:layout_width="150dp"-->
+            <!--android:layout_height="150dp"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--map:liteMode="true"-->
+            <!--/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/drivingCourse_Title"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:text="우리집에서 팀노바까지"-->
+            <!--android:textColor="#fafafa"-->
+            <!--android:textSize="20dp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/drivingCourse_TotalDistance"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_toRightOf="@+id/drivingCourse_Image"-->
+            <!--android:ellipsize="end"-->
+
+            <!--android:maxLines="3"-->
+            <!--android:padding="10dp"-->
+            <!--android:text="총 주행거리 : 10.8km"-->
+            <!--android:textColor="#fafafa"-->
+            <!--android:textSize="16dp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/drivingCourse_TotalTime"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+
+            <!--android:layout_alignBottom="@+id/drivingCourse_Image"-->
+            <!--android:layout_toRightOf="@+id/drivingCourse_Image"-->
+
+            <!--android:ellipsize="end"-->
+
+            <!--android:maxLines="3"-->
+            <!--android:padding="10dp"-->
+            <!--android:text="총 주행시간 : 15분 03초"-->
+            <!--android:textColor="#fafafa"-->
+            <!--android:textSize="16dp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/courseID"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+
+            <!--android:visibility="gone" />-->
+
+    <!--</RelativeLayout>-->
+
+</android.support.v7.widget.CardView>

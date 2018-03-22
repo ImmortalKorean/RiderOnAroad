@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.project.sangyeop.road_rideronaroad.Recording_Driving_Mode">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/map_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1">
+
+            <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.MapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                map:uiRotateGestures="false"
+                map:uiTiltGestures="false" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/switch_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal"
+
+            android:padding="5dp">
+
+            <ImageButton
+                android:id="@+id/lockButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_margin="5dp"
+                android:background="@drawable/mybutton_off"
+                android:padding="2dp"
+
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_lock_open_white_24dp"
+
+                />
+
+            <ImageButton
+                android:id="@+id/recordingDrivingCourse"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/mybutton"
+                android:padding="2dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_play_arrow_black_24dp" />
+
+            <ImageButton
+                android:id="@+id/loadingCourse"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:scaleType="fitCenter"
+                android:background="@drawable/mybutton"
+                android:src="@drawable/ic_assessment_white_24dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/speedLimit"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/speedlimit" />
+
+
+    <TextView
+        android:id="@+id/speedLimitText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/speedLimit"
+        android:layout_marginLeft="25dp"
+
+        android:textSize="50dp" />
+
+
+    <TextView
+        android:id="@+id/speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/speedLimit"
+        android:layout_marginLeft="25dp"
+
+        android:textSize="50dp" />
+
+    <ImageView
+        android:id="@+id/noBike"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/speed"
+        android:src="@drawable/nobike"
+        android:visibility="invisible" />
+
+
+    <TextView
+        android:id="@+id/roadAdress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="15dp"
+        android:padding="5dp"
+        android:textColor="#14301a"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/alertDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#90be5252"
+
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/countDown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="#c3261e"
+            android:textSize="300dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/friendList_profileImg"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_gravity="center"
+        android:src="@drawable/profile"
+
+        android:layout_margin="5dp"
+        />
+
+    <TextView
+        android:id="@+id/friendList_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center"
+
+        android:maxLength="10"
+        android:ellipsize="end"
+        android:text="이문장은열글자이다아이문장은열글자이다아"
+
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/friendList_statusMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+
+            android:layout_marginRight="10dp"
+
+            android:ellipsize="end"
+            android:maxLines="2"
+
+            android:text="대화명이다" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
